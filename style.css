@@ -5,7 +5,7 @@ body{
 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 10px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
     background-color: #3e4e88;
@@ -14,12 +14,13 @@ a{
     color: white;
     margin: 0 0 0 1.5em;
 }
-div p{
-    display: flex;
+div{
+     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     text-align: justify;
-    margin: 35%;
+}
+div p{
+    margin: 7rem;
     color: black;
 }
 footer p{
@@ -31,4 +32,14 @@ footer p{
     color: white;
     background-color: #3e4e88;
     box-shadow: rgba(0, 0, 0, 0.4);
+}
+@media screen and (min-width: 500px){
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 10px;
+        box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+        background-color: #3e4e88;
+    }
 }
