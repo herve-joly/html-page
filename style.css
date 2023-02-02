@@ -37,8 +37,10 @@ article{
     color: black;
     text-align: justify;
 }
-blockquote{
-    font-family: "MADERING";
+#img-index{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Bio */
 .bio{
@@ -52,9 +54,7 @@ blockquote{
     height: 200px;
     margin: 40px 0 0;
 }
-.bio-description{
-    margin: 0 0 40px;
-}
+
 h1{
     margin: 40px 0 0;
     text-align: center;
@@ -118,6 +118,7 @@ img{
     border-radius: 20px;
     height: 260px;
     margin: 20px;
+    text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .project-card p{
@@ -143,27 +144,38 @@ footer p{
 
 
  @media screen and (min-width: 500px){
+    nav{
+        position: fixed;
+        top: 0;
+        margin: 8px 0 0;
+        width: 98%;
+        /* border-radius: 20px;
+        text-align: center;
+        background-color: #3e4e88;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.4)  */
+    }
+
     nav ul{
-        display: flex;
-        flex-direction: row;
+        /* display: flex;
+        flex-direction: row; */
         justify-content: flex-end;
         margin: 0;
-        border-radius: 20px;
+        /* border-radius: 20px;
         box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
-        background-color: #3e4e88;
+        background-color: #3e4e88; */
     }
     nav a{
         color: white;
         margin: 0 0 0 1.5em;
     }
-    h1{
+    /* h1{
         margin: 0;
         width: 600px;
-    }
+    } */
     .portfolio{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: flex-start;
         flex-wrap: wrap; 
     }
