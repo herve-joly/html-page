@@ -2,16 +2,13 @@
     font-family: MADERING;
     src: url(/assets/MADERING.ttf);
 }
+
 /* Header */
 nav{
     position: fixed;
     top: 0;
     margin: 8px 0 0;
     width: 96%;
-    /* border-radius: 20px;
-    text-align: center;
-    background-color: #3e4e88;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.4)  */
 }
 nav ul{
     display: flex;
@@ -37,10 +34,39 @@ article{
     color: black;
     text-align: justify;
 }
+img{
+    border-radius: 20px;
+    height: 260px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h1{
+    margin: 40px 0 0;
+    text-align: center;
+    font-family: "MADERING";
+    font-size: 2.5em;
+}
+h2{
+    text-align: center;
+    font-family: "MADERING";
+}
+h3{
+    font-family: "MADERING";
+}
+
+/* Index */
 #img-index{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+blockquote{
+    text-align: center;
+    font-family: "MADERING";
+    font-size: 1.3em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
 }
 /* Bio */
 .bio{
@@ -54,48 +80,26 @@ article{
     height: 200px;
     margin: 40px 0 0;
 }
-
-h1{
-    margin: 40px 0 0;
-    text-align: center;
-    font-family: "MADERING";
-    font-size: 2.5em;
-}
-h2{
-    text-align: center;
-    font-family: "MADERING";
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-}
-h3{
-    font-family: "MADERING";
-}
 /* Experience */
 .experience-container{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
 }
 #experience h2{
     margin: 0;
-    text-align: center;
-    font-family: "MADERING";
-    /* font-size: 2.5em; */
+    text-align: start;
 }
 .experience-card{
     display: flex;
     flex-direction: row;
-    max-height: 300px;
-    margin: 20px 0 0;
-    /* border: solid; */
+    max-height: 200px;
+    margin: 10px 0 0;
 }
 .experience-card img{
     border-radius: 20px;
     height: 60px;
-    margin: 0;
-}
-.experience-card article{
-    text-align: justify;
+    margin: 0 10px 0 0;
 }
 /* Portfolio CSS */
 .portfolio{
@@ -114,13 +118,7 @@ h3{
     border-radius: 12px;
     box-shadow: 15px 15px rgba(0, 0, 0, 0.4);
 }
-img{
-    border-radius: 20px;
-    height: 260px;
-    margin: 20px;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
+
 .project-card p{
     margin: 20px;
     text-align: justify;
@@ -145,48 +143,27 @@ footer p{
 
  @media screen and (min-width: 500px){
     nav{
-        position: fixed;
-        top: 0;
-        margin: 8px 0 0;
         width: 98%;
-        /* border-radius: 20px;
-        text-align: center;
-        background-color: #3e4e88;
-        box-shadow: 5px 5px rgba(0, 0, 0, 0.4)  */
     }
-
     nav ul{
-        /* display: flex;
-        flex-direction: row; */
         justify-content: flex-end;
-        margin: 0;
-        /* border-radius: 20px;
-        box-shadow: 5px 5px rgba(0, 0, 0, 0.4);
-        background-color: #3e4e88; */
     }
     nav a{
-        color: white;
-        margin: 0 0 0 1.5em;
+        margin: 0 20px 0 0;
     }
-    /* h1{
-        margin: 0;
-        width: 600px;
-    } */
+    .bio{
+        justify-content: space-around
+    }
     .portfolio{
-        display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: flex-start;
-        flex-wrap: wrap; 
     }
     footer{
-        /* position: fixed;
-        bottom: 0; */
-        margin: 0 0 8px;
         width: 98%;
-        border-radius: 20px;
         text-align: end;
-        /* background-color: #3e4e88;
-        box-shadow: 5px 5px rgba(0, 0, 0, 0.4) */
+    }
+    footer p{
+        margin: 0 20px 0 0;
     }
 } 
