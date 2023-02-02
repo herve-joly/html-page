@@ -31,7 +31,7 @@ nav a{
 
 /* Main */
 .wrapper{
-    margin: 20px;
+    margin: 20px 20px 40px;
 }
 article{
     color: black;
@@ -109,7 +109,7 @@ h3{
     flex-direction: column;
     align-items: center;
     border: solid #3e4e88;
-    margin: 20px;
+    margin: 20px 0 0;
     max-width: 300px;
     border-radius: 12px;
     box-shadow: 15px 15px rgba(0, 0, 0, 0.4);
